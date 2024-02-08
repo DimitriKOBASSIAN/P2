@@ -1,4 +1,17 @@
 /****** General ***********/
+
+@media (min-width: 576px) 
+    {
+    .fa-magnifying-glass {
+        display: none;}
+    }
+    
+    @media (max-width: 576px) 
+    {
+    .search_form_submitinput_text {
+        display: none;}
+    }
+    
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -107,32 +120,62 @@ nav {
 
 .fa-location-dot {color:black}
 
+.fa-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+
+}
+
+.search_form {display: inline-flex;
+    height: 40px;
+align-items: ;}
+
 .search_form_icon {
     background-color: #D9D9D9;
-    border-radius: 20px 0 0 20px;
-    height: 50px;
+    border-radius: 15px 0 0 15px;
     width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    display: inline-flex
+    display: flex;
+    flex-wrap: wrap;
 
 }
 .search_form_input {
     background-color: #FFFFFF;
-    border: 2px solid #D9D9D9;
-    height: 50px;
-    display: inline-flex;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_form_input::placeholder {
+    display:flex;
+    color: black;
+    font-weight: 900;
+    padding-left: 10px;
 
 }
 
 .search_form_submitinput_button {
-    border-radius: 0 20px 20px 0;
+    display:flex;
+    border-radius: 0 15px 15px 0;
     background-color: #0065FC;
+    border: 2px solid #0065FC;
     color:#DEEBFF;
     font-weight:bold;
-    height: 50px;
-    display: inline-flex;
+    align-items: center;
+}
+
+.fa-magnifying-glass {
+    color:#FFFFFF
 }
 
 .filter_title {
@@ -141,11 +184,16 @@ nav {
 
 .button_filter {
     display: flex;
+    justify-content:center;
     align-items: center;
+    height: 50px;
     background-color: #FFFFFF;
     border: 2px solid #D9D9D9;
     border-radius: 50px ; 
     display: inline-flex;
+    
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .button_filter:hover {background-color: #DEEBFF;}
@@ -156,6 +204,7 @@ nav {
 
 .button_filter p {
     font-weight: 800;
+    margin-left: 10px;
 }
 
 .search_results {display: flex;
