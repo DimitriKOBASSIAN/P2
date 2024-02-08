@@ -17,7 +17,7 @@
 <body>
     <div class="main-container">
         <header class="header">
-                <img src="./images/logo/Booki@3x.png" alt="logo-booki" class="logo" />
+                <img class="logo" src="./images/logo/Booki@3x.png" alt="logo-booki"  />
                 <nav class="nav_bar">
                     <a href="#hosting" class="header_nav_link Raleway_bold">Hébergements</a>
                     <a href="#activity"class="header_nav_link Raleway_bold">Activités</a>
@@ -29,19 +29,21 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                     <form class="search_form" method="GET" action="#">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="search_form_icon"><i class="fa-solid fa-location-dot"></i></div>
                         <input class="search_form_input" type="search" placeholder="Marseille, France" />
-                        <button><p class="search_form_submitinput_text">Rechercher</p><i class="fa-solid fa-magnifying-glass search_text_icon"></i></button>
+                        <button class="search_form_submitinput_button"><p class="search_form_submitinput_text">Rechercher</p><i class="fa-solid fa-magnifying-glass search_text_icon"></i></button>
                     </form>
-                    <p>Filtres</p>
-                    <button><i class="fa-solid fa-money-bill-wave"></i><p>Economique</p></button>
-                    <button><i class="fa-solid fa-person"></i><p>Familial</p></button>
-                    <button><i class="fa-solid fa-heart"></i><p>Romantique</p></button>
-                    <button><i class="fa-solid fa-fire"></i><p>Nos pépites</p></button>
-                    <div>
-                        <br>
-                        <i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville.</p>
-                    </div>
+                        <div>
+                            <p class="filter_title">Filtres</p>
+                                <button class="button_filter"><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></button>
+                                <button class="button_filter"><i class="fa-solid fa-person"></i><p>Familial</p></button>
+                                <button class="button_filter"><i class="fa-solid fa-heart"></i><p>Romantique</p></button>
+                                <button class="button_filter"><i class="fa-solid fa-fire"></i><p>Nos pépites</p></button>
+                        </div>
+                        <div class="search_results">
+                            <br>
+                            <i class="fa-solid fa-circle-info"></i><p>Plus de 500 logements sont disponibles dans cette ville.</p>
+                        </div>
 
                 
                 </section>
