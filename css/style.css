@@ -249,15 +249,17 @@ align-items: center;}
     width: 65%;
 }
 .hebergements-title {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
 .hebergements-cards .card {
     display: inline-flex;
     flex-direction: column;
-    margin-top: 33px;
-    margin-left: 6px;
+    justify-content: space-around;
+    margin: 33px 5px 0 5px;
     width: 30%;
     height: auto;
 }
