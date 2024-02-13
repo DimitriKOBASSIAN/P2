@@ -1,7 +1,5 @@
 /****** General ***********/
 
-
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -65,12 +63,6 @@ a {
     color: var(--main-bg-color)
 }
 
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
-
 /******** Header ********/
 
 .header {
@@ -89,11 +81,13 @@ img {
 }
 
 .header_nav_link {
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
     width: 120px;
-    padding: 30px;
-    padding-top: 20px;
-    font-weight: 500;
+    padding: 20px;
     border-top: 4px solid transparent;
+    justify-content: space-evenly;
 }
 
 .header_nav_link:hover {
@@ -167,12 +161,11 @@ img {
     background-color: #0065FC;
     border: 2px solid #0065FC;
     color:#DEEBFF;
-    font-weight: 800;
+    font-weight: 700;
     align-items: center;
 }
 
 .search_form_submitinput_text {
-    font-weight: 800px;
     margin-left: 10px;
     margin-right: 10px
 }
@@ -197,14 +190,12 @@ img {
 }
 
 .button_filter {
-    display: flex;
-    justify-content:center;
+    display: inline-flex;
     align-items: center;
     height: 40px;
     background-color: #FFFFFF;
     border: 2px solid #D9D9D9;
     border-radius: 50px ; 
-    display: inline-flex;
     margin-right: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -216,7 +207,7 @@ img {
     display: flex;
 }
 
-.button_filter p {
+.button_filter span {
     font-weight: 800;
     margin-left: 10px;
 }
@@ -257,10 +248,8 @@ align-items: center;}
 }
 
 .hebergements-cards {
-    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
     margin-top: 30px;
     grid-auto-flow: row;
@@ -286,6 +275,7 @@ align-items: center;}
     height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .hebergements-cards .card-content {
@@ -358,10 +348,11 @@ align-items: center;}
 /* activités */
 
 .activities {width: 100%;
-padding: 30px 30px 0 30px;
+/* padding: 30px 30px 0 30px; */
 justify-content: space-between;
 align-items: center;
 box-sizing: border-box;
+margin-top: 50px;
 }
 
 .activities-title {
@@ -369,8 +360,10 @@ box-sizing: border-box;
 }
 
 .activities-cards {
-    padding: 30px 30px 30px 30x;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    grid-auto-flow: row;
 }
 
 .activities-cards .card {
@@ -378,7 +371,7 @@ box-sizing: border-box;
     flex-direction: column;
     flex-wrap: nowrap;
     height: 400px;
-    width: 22%;
+    width: 100%;
     margin-top: 33px;
     margin-left: 15px;
     margin-right: 15px;
@@ -425,6 +418,7 @@ display: flex;
 
 .footer_item {
     font-size: small;
+    font-weight: 500;
 }
 
 .footer-section {
