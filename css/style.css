@@ -1,5 +1,9 @@
 /****** General ***********/
 
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -364,11 +368,8 @@ align-items: center;}
     display: inline-flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 400px;
     width: 100%;
     margin-top: 33px;
-    margin-left: 15px;
-    margin-right: 15px;
     margin-bottom: 45px;
     padding: 0px; 
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -429,19 +430,46 @@ align-items: center;}
         flex-direction: column;
     }
 
+    .hostings-and-popular section{
+        flex-direction: column;
+    }
+
+    .filter-div {
+        flex-wrap: wrap;
+    }
+
+    .button-row {
+        width: 100%;
+    }
+    .card-subtitle {
+        font-size: 12px;
+    }
+
     .hostings {
         width: 100%;
+    }
+
+    .hostings-cards .card-title {
+        font-size: 14px;
     }
 
     .popular {
         width: 100%;
         margin-top: 50px;
+        padding: 30px 0 30px 0;
     }
 
     .popular-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content:space-around;
+        padding: none
+        
+    }
+
+    .popular-cards .card {
+        display: flex;
+        margin-top: 20px;
     }
 
     .popular-cards a {
@@ -455,26 +483,64 @@ align-items: center;}
     .popular-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activities-cards-img {
+        height: 200px;
+    }
+
+    .activities-cards {
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .activities-cards .card-title {
+        font-size: 14px;
+    }
+    
+    .footer-title {
+        font-size: 14px;
+    }
+
+    .footer-item {
+        font-size: 12px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .search-form {
+        width: 100%;
+
+        
+    }
+
+    .search-form-input {
+    width: calc(100% - 25px);}
+
+
+    .search-form-submitinput-button {
+        border-radius: 10px;
+        width: 50px;
+        background-color: #0065FC;
+        color: #DEEBFF;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin-left: -25px;
+    }
 }
 
-@media (min-width: 576px) 
+@media (min-width: 768px) 
     {
     .fa-magnifying-glass {
         display: none;}
     }
-    
-    @media (max-width: 576px) 
-    {
+
+    @media (max-width: 768px) {
     .search-form-submitinput-text {
         display: none;}
     }
-    
-* {
-    font-family: 'Raleway', sans-serif;
-}
+
 
