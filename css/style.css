@@ -80,7 +80,7 @@ a {
     align-items: start;
 }
 
-.header_nav_link {
+.header-nav-link {
     display: flex;
     font-weight: 600;
     font-size: 14px;
@@ -90,7 +90,7 @@ a {
     justify-content: space-evenly;
 }
 
-.header_nav_link:hover {
+.header-nav-link:hover {
     color: #0065FC;
     border-top: 4px solid #0065FC;
 }
@@ -117,15 +117,15 @@ a {
 
 }
 
-.filter_icon {
+.filter-icon {
     font-size: large;
 }
 
-.search_form {display: inline-flex;
+.search-form {display: inline-flex;
     height: 40px;
 }
 
-.search_form_icon {
+.search-form-icon {
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
@@ -136,7 +136,7 @@ a {
     flex-wrap: wrap;
 
 }
-.search_form_input {
+.search-form-input {
     background-color: #FFFFFF;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
@@ -146,7 +146,7 @@ a {
     flex-wrap: wrap;
 }
 
-.search_form_input::placeholder {
+.search-form-input::placeholder {
     display:flex;
     color: black;
     font-weight: bold;
@@ -155,7 +155,7 @@ a {
 
 }
 
-.search_form_submitinput_button {
+.search-form-submitinput-button {
     display:flex;
     border-radius: 0 15px 15px 0;
     background-color: #0065FC;
@@ -165,31 +165,31 @@ a {
     align-items: center;
 }
 
-.search_form_submitinput_text {
+.search-form-submitinput-text {
     margin-left: 10px;
-    margin-right: 10px
+    margin-right: 10px-
 }
 
 .fa-magnifying-glass {
     color:#FFFFFF
 }
 
-.filter_title {
+.filter-title {
     font-weight: bold;
     margin-right: 10px
 }
 
-.filter_name {
+.filter-name {
     font-size:14px;
 }
 
-.filter_div {
+.filter-div {
     display: inline-flex;
     align-items: center;
     margin-top: 15px;
 }
 
-.button_filter {
+.button-filter {
     display: inline-flex;
     align-items: center;
     height: 40px;
@@ -201,18 +201,18 @@ a {
     padding-right: 15px;
 }
 
-.button_filter:hover {background-color: #DEEBFF;}
+.button-filter:hover {background-color: #DEEBFF;}
 
-.button_filter i {
+.button-filter i {
     display: flex;
 }
 
-.button_filter span {
+.button-filter span {
     font-weight: 800;
     margin-left: 10px;
 }
 
-.search_results {display: flex;
+.search-results {display: flex;
 align-items: center;}
 
 .Information{
@@ -411,12 +411,12 @@ margin-top: 50px;
 display: flex;
 }
 
-.footer_title {
+.footer-title {
     font-weight: bold;
     margin-right: 10px;
 }
 
-.footer_item {
+.footer-item {
     font-size: small;
     font-weight: 500;
 }
@@ -475,7 +475,7 @@ display: flex;
     
     @media (max-width: 576px) 
     {
-    .search_form_submitinput_text {
+    .search-form-submitinput-text {
         display: none;}
     }
     
