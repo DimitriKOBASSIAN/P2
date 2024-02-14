@@ -529,26 +529,32 @@ align-items: center;}
     .nav-bar{display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        padding: 0;
-        margin: 0;}
+} 
 
     .header-nav-link {
-/*         position: relative; */
         display: flex;
         width: 100%;
-        margin-top: 20px;
         border-top: 4px solid transparent;
         border-bottom: 4px solid #F2F2F2;
+        margin-left: -20px;
+        margin-right: -20px;        
     }
 
-    .link-hosting {margin-left: 0px;}
+    .link-hosting {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .link-activities {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
 
     .header-nav-link:hover {
         display: flex;
         position: relative;
         color: #0065FC;
         width: 100%;
-        margin-top: 20px;
         border-top: 4px solid transparent;
         border-bottom: 4px solid #0065FC;
 
