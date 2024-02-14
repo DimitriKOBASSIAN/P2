@@ -427,7 +427,7 @@ align-items: center;}
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px
-        ) and (min-with: 768px){
+        ) and (min-width: 768px){
     .hostings-and-popular {
         flex-direction: column;
     }
