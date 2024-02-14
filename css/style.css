@@ -29,6 +29,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -232,12 +233,12 @@ align-items: center;}
     margin-top: 15px;
 }
 
-.hostings-and-popular section {
+/* .hostings-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-}
+} */
 
 /****** hostings ***********/
 .hostings {
@@ -425,7 +426,8 @@ align-items: center;}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px
+        ) and (min-with: 768px){
     .hostings-and-popular {
         flex-direction: column;
     }
@@ -526,7 +528,7 @@ align-items: center;}
         display:flex;
         justify-items: center;
     height: 30px;
-margin-bottom: 20px;}
+    margin-bottom: 20px;}
 
     .nav-bar{display: grid;
         grid-template-columns: 1fr 1fr;
@@ -559,8 +561,10 @@ margin-bottom: 20px;}
     }
 
     .adhook {
-        font-size: 22px;
+        font-size: 20px;
     }
+
+    .search {padding: 0 0px}
 
     .search-form {
         width: 100%;        
@@ -601,19 +605,22 @@ margin-bottom: 20px;}
     }
 
     .fa-magnifying-glass {
-        font-size: large}
+        font-size: large
     }
 
     .filter-title {
         font-weight: bold;
         font-size: 22px;
-        margin-right: 1px
+        margin-left: 20px
     }
     
     .filter-name {
         font-size:14px;
     }
     
+    .top-search {margin-bottom: 30px;
+        padding: 10px;}
+
     .filter-div {
         display: inline-flex;
         align-items: center;
@@ -621,14 +628,139 @@ margin-bottom: 20px;}
     }
     
     .button-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+
     }
+
+    .button-filter {
+    display: inline-flex;
+    align-items: center;
+    height: 60px;
+    width: 45%;
+    background-color: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    border-radius: 50px ;
+    margin-right: 0px; 
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+    .filter-name {
+        justify-items: center ;
+        font-size: large;
+    }
+
+    .filter-icon {font-size: x-large;}
+
+    .fa-info {margin: 20px}
+
+    .information {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .hostings-and-popular {flex-direction: column-reverse;}
+
+    .card {
+        width: 99%;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-subtitle {
+    font-size: 18px;
+}
+
+    .hostings-and-popular section {
+        border-radius: 0px;
+        box-sizing: border-box;
+    }
+
+    .popular {
+        background-color: var(--main-bg-color);
+        padding: 30px;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        border-radius: 0px;}
+
+    .popular-cards {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    .hostings {width: 100% ;
+    background-color: #FFFFFF;
+padding: 30px;}
+
+    .hostings-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hostings-cards img {
+        height: 160px;
+        object-fit:cover;
+        object-position: 50% 60%;
+    }
+
+    .activities {padding: 30px;
+    margin: 0;}
+
+    .activities-cards {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .activities-cards .card {
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .activities-cards img {
+        object-fit: cover;
+        height: 220px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .footer-section {width: 100%;}
+
+    .footer-title {
+        font-size: 22px;
+    }
+
+    .footer-item {font-size: 18px;}
+}
+
+
 
 @media (min-width: 768px) 
     {
     .fa-magnifying-glass {
         display: none;}
+
+    .hostings-and-popular section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+        }
     }
 
     @media (max-width: 768px) {
