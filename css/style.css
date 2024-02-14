@@ -339,7 +339,6 @@ align-items: center;}
 }
 
 .popular-cards .card-rating {
-    display: inli;
     align-items: end;
     margin-bottom: 5px;
 }
@@ -465,8 +464,6 @@ align-items: center;}
         display: flex;
         flex-direction: row;
         justify-content:space-around;
-        padding: none
-        
     }
 
     .popular-cards .card {
