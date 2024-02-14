@@ -614,16 +614,13 @@ align-items: center;}
         margin-left: 20px
     }
     
-    .filter-name {
-        font-size:14px;
-    }
-    
     .top-search {margin-bottom: 30px;
         padding: 10px;}
 
     .filter-div {
-        display: inline-flex;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
         margin-top: 15px;
     }
     
@@ -651,7 +648,7 @@ align-items: center;}
 
     .filter-name {
         justify-items: center ;
-        font-size: large;
+        font-size: 18px;
     }
 
     .filter-icon {font-size: x-large;}
