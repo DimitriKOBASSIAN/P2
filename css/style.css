@@ -400,11 +400,12 @@ align-items: center;}
 
 /* footer */
 .footer {
-    background-color: var(--main-bg-color);;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    display: flex;
 }
 
 .footer-title {
