@@ -233,13 +233,6 @@ align-items: center;}
     margin-top: 15px;
 }
 
-/* .hostings-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-} */
-
 /****** hostings ***********/
 .hostings {
     width: 65%;
@@ -272,7 +265,6 @@ align-items: center;}
     height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
 }
 
 .hostings-cards .card-content {
@@ -432,17 +424,22 @@ align-items: center;}
         flex-direction: column;
     }
 
+/* Search */
+
+.filter-div {
+    flex-wrap: wrap;
+}
+
+.button-row {
+    width: 100%;
+}
+
+/* hostings and popular */
+
     .hostings-and-popular section{
         flex-direction: column;
     }
 
-    .filter-div {
-        flex-wrap: wrap;
-    }
-
-    .button-row {
-        width: 100%;
-    }
     .card-subtitle {
         font-size: 12px;
     }
@@ -484,6 +481,8 @@ align-items: center;}
         font-size: 13px;
     }
 
+    /* activities */
+
     .activities-cards-img {
         height: 200px;
     }
@@ -497,6 +496,9 @@ align-items: center;}
         font-size: 14px;
     }
     
+
+/* footer */
+
     .footer-title {
         font-size: 14px;
     }
@@ -513,6 +515,8 @@ align-items: center;}
     .main-container {
         padding: 0 0px
     }
+
+/* Header */
 
     .header {
     flex-direction: column;
@@ -545,13 +549,14 @@ align-items: center;}
     }
 
     .header-nav-link:hover {
-/*         display: flex; */
         position: relative;
         color: #0065FC;
         width: 100%;
         border-top: 4px solid transparent;
         border-bottom: 4px solid #0065FC;
     }
+
+/* search */
 
     h1 {
         font-size: 30px;
@@ -659,6 +664,8 @@ align-items: center;}
         font-weight: 500;
     }
 
+/* hosting and popular */
+
     .hostings-and-popular {flex-direction: column-reverse;}
 
     .card {
@@ -707,6 +714,8 @@ padding: 30px;}
         object-position: 50% 60%;
     }
 
+/* activities */
+
     .activities {padding: 30px;
     margin: 0;}
 
@@ -730,6 +739,8 @@ padding: 30px;}
         height: 220px;
     }
 
+/* footer */
+
     .footer {
         flex-direction: column;
         padding: 30px;
@@ -745,6 +756,7 @@ padding: 30px;}
 }
 
 
+/* miscellanous css variations depending on screen size */
 
 @media (min-width: 768px) 
     {
