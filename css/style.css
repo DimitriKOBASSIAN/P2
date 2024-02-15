@@ -783,7 +783,7 @@ align-items: center;}
     }
 }
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     .search-form-submitinput-text {
         display: none;
     }
