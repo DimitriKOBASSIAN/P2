@@ -109,7 +109,8 @@ h1 {font-size: 22px;}
 .adhook {
     margin-bottom: 40px;
     font-weight: 500;
-    font-size: 1em;}
+    font-size: 1em;
+}
 
 .circle {
     display: flex;
@@ -251,8 +252,6 @@ h1 {font-size: 22px;}
 .hostings-title {
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .hostings-cards {
@@ -375,7 +374,6 @@ h1 {font-size: 22px;}
     margin-bottom: 45px;
     padding: 0px; 
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
 }
 
 .activities-cards-img {
@@ -547,7 +545,7 @@ h1 {font-size: 22px;}
         grid-template-columns: 1fr 1fr;
         width: 100%;
         gap: 0px;
-} 
+    } 
 
     .header-nav-link {
         width: 100%;
@@ -630,9 +628,10 @@ h1 {font-size: 22px;}
         font-size: 22px;
         margin-left: 20px
     }
-    
+
     .top-search {margin-bottom: 30px;
-        padding: 10px;}
+        padding: 10px;
+    }
 
     .filter-div {
         display: flex;
@@ -711,14 +710,13 @@ h1 {font-size: 22px;}
         box-sizing: border-box;
         width: 100%;
         margin-top: 0px;
-
-        border-radius: 0px;}
+        border-radius: 0px;
+    }
 
     .popular-cards {
         flex-direction: column;
         flex-wrap: wrap;
     }
-
 
     .hostings {
         width: 100% ;
@@ -755,7 +753,6 @@ h1 {font-size: 22px;}
         width: 100%;
         margin-top: 15px;
         margin-bottom: 15px;
-
     }
 
     .activities-cards img {
@@ -778,7 +775,9 @@ h1 {font-size: 22px;}
         font-size: 22px;
     }
 
-    .footer-item {font-size: 18px;}
+    .footer-item {
+        font-size: 18px;
+    }
 }
 
 
