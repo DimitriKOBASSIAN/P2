@@ -111,17 +111,20 @@ h1 {font-size: 22px;}
     font-weight: 500;
     font-size: 1em;}
 
+.circle {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    min-width: 25px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 .fa-info {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #d9d9d9;
-    padding: 5px 5px;
-    margin-right: 10px;
-    border-radius: 20px;
-
 }
 
 .filter-icon {
@@ -663,11 +666,6 @@ align-items: center;}
         font-size: x-large;
     }
 
-    .fa-info {
-        margin: 20px;
-        padding: 5px 5px;
-    }
-
     .information {
         font-size: 20px;
         font-weight: 500;
@@ -791,10 +789,6 @@ align-items: center;}
         font-weight: bold;
         padding-left: 1px;
         font-size: 16px;
-    }
-    .fa-info {
-        margin: 10px;
-        padding: 5px 10px;
     }
 
     .filter-name {
