@@ -736,7 +736,7 @@ h1 {font-size: 22px;}
 
     .activities-cards {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 0px;
     }
 
     .activities-cards .card {
