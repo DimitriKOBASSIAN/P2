@@ -782,12 +782,24 @@ h1 {font-size: 22px;}
 
 @media (max-width: 280px) {
 
-    .main-container {
+    .link-hosting {
+        padding-left: 5px;
+    }
+
+    .top-search {
+        padding: 30px;
+    }
+
+    .filter-div {
         padding: 15px;
     }
 
-    .link-hosting {
-        padding-left: 5px;
+    .information {
+        font-size: 18px;
+    }
+
+    .search-form-input {
+        padding-left: 10px;
     }
 
     .search-form-input::placeholder {
