@@ -70,10 +70,6 @@ a {
 
 /******** Header ********/
 
-.header {
-    display: flex;
-    align-items: start;
-}
 .logo {
     height: 20px;
     padding-top: 30px;
