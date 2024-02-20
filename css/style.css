@@ -132,7 +132,8 @@ h1 {font-size: 22px;}
     font-size: large;
 }
 
-.search-form {display: inline-flex;
+.search-form {
+    display: inline-flex;
     height: 40px;
 }
 
@@ -143,7 +144,6 @@ h1 {font-size: 22px;}
     display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
     flex-wrap: wrap;
 
 }
@@ -262,12 +262,6 @@ h1 {font-size: 22px;}
     grid-auto-flow: row;
 }
 
-.item1 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-
 .hostings-cards img {
     align-items: start;
     width: 100%;
@@ -340,7 +334,6 @@ h1 {font-size: 22px;}
 }
 
 .popular-cards .card-rating {
-    align-items: end;
     margin-bottom: 5px;
 }
 
@@ -348,8 +341,6 @@ h1 {font-size: 22px;}
 
 .activities {
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     box-sizing: border-box;
     margin-top: 50px;
 }
@@ -380,7 +371,6 @@ h1 {font-size: 22px;}
     display: inline-flex;
     align-items: start;
     width: 100%;
-    height: 90%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -541,7 +531,8 @@ h1 {font-size: 22px;}
         margin-bottom: 20px;
     }
 
-    .nav-bar{display: grid;
+    .nav-bar{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
         gap: 0px;
