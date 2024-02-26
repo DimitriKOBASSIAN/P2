@@ -17,15 +17,15 @@
 <body>
     <div class="main-container">
         <header class="header">
-                <img class="logo" src="./images/logo/Booki@3x.png" alt="logo-booki"  />
-                <nav class="nav-bar">
-                    <a href="#hosting" class="header-nav-link link-hosting">Hébergements</a>
-                    <a href="#activities" class="header-nav-link link-activities">Activités</a>
-                </nav>
+            <img class="logo" src="./images/logo/Booki@3x.png" alt="logo-booki"  />
+            <nav class="nav-bar">
+                <a href="#hosting" class="header-nav-link link-hosting">Hébergements</a>
+                <a href="#activities" class="header-nav-link link-activities">Activités</a>
+            </nav>
         </header>
         <main>
             <div class="search">
-                    <div class="top-search">
+                <div class="top-search">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="adhook">En plein centre-ville ou en pleine nature</p>
                     <form name="search-tool" class="search-form" method="GET" action="#">
@@ -34,22 +34,24 @@
                         <input class="search-form-input" type="search" placeholder="Marseille, France" />
                         <button id="submitSearch" type="submit" class="search-form-submitinput-button"><span class="search-form-submitinput-text">Rechercher</span><i class="fa-solid fa-magnifying-glass search-text-icon"></i></button>
                     </form>
+                </div>
+                    <div class="filter-div">
+                        <p class="filter-title">Filtres</p>
+                        <div class="button-row">
+                            <button id="budget" type="button" class="button-filter"><i class="filter-icon fa-solid fa-money-bill-wave"></i><span class="filter-name">Économique</span></button>
+                            <button id="homelike" type="button" class="button-filter"><i class="filter-icon fa-solid fa-person"></i><span class="filter-name">Familial</span></button>
+                            <button id="romantic" type="button" class="button-filter"><i class="filter-icon fa-solid fa-heart"></i><span class="filter-name">Romantique</span></button>
+                            <button id="ourPicks" type="button" class="button-filter"><i class="filter-icon fa-solid fa-fire"></i><span class="filter-name">Nos pépites</span></button>
+                    
+                        </div>
                     </div>
-                        <div class="filter-div">
-                            <p class="filter-title">Filtres</p>
-                            <div class="button-row">
-                                <button id="budget" type="button" class="button-filter"><i class="filter-icon fa-solid fa-money-bill-wave"></i><span class="filter-name">Économique</span></button>
-                                <button id="homelike" type="button" class="button-filter"><i class="filter-icon fa-solid fa-person"></i><span class="filter-name">Familial</span></button>
-                                <button id="romantic" type="button" class="button-filter"><i class="filter-icon fa-solid fa-heart"></i><span class="filter-name">Romantique</span></button>
-                                <button id="ourPicks" type="button" class="button-filter"><i class="filter-icon fa-solid fa-fire"></i><span class="filter-name">Nos pépites</span></button>
-                        
-                            </div>
+                    <div class="search-results">
+                        <br>
+                        <div class="circle">
+                            <i class="fa-solid fa-info"></i>
                         </div>
-                        <div class="search-results">
-                            <br>
-                            <div class="circle"><i class="fa-solid fa-info"></i></div>
-                            <p class="information">Plus de 500 logements sont disponibles dans cette ville.</p>
-                        </div>
+                        <p class="information">Plus de 500 logements sont disponibles dans cette ville.</p>
+                    </div>
                 
                 </div>
             <div class="hostings-and-popular">
@@ -245,10 +247,10 @@
                 </section>
             </div>
             <div class="activities-block">
-            <section class="activities" id="activities">
-                <div class="activities-titles">
-                    <h2 class="section-title">Activités à Marseille</h2>
-                </div>
+                <section class="activities" id="activities">
+                    <div class="activities-titles">
+                        <h2 class="section-title">Activités à Marseille</h2>
+                    </div>
                     <div class="activities-cards">
                         <a href="#">
                             <article class="card">
@@ -290,7 +292,7 @@
                                 </div>
                             </article>
                         </a>
-                </div>
+                    </div>
                 </section>
             </div>
         </main>
